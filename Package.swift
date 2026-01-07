@@ -22,6 +22,7 @@ let package = Package(
             name: "VersionedLib",
             swiftSettings: [
                 .enableExperimentalFeature("AvailabilityMacro=VersionedLib 1.0.0:macOS 10.15"),
+                .enableExperimentalFeature("AvailabilityMacro=VersionedLib 1.0.1:macOS 10.15"),
             ]
         ),
     ]

@@ -6,7 +6,13 @@ import Foundation
 @available(VersionedLib 1.0.0, *)
 public final class SomeClass {
     let name: String
+
     public init(_ name: String) {
         self.name = name
+    }
+
+    @available(VersionedLib 1.0.1, *)
+    public func modified(adding name: String) -> SomeClass {
+        SomeClass("\(self.name) \(name)")
     }
 }
